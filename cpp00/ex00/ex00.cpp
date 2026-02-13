@@ -2,18 +2,16 @@
 #include <iostream>
 #include <string>
 
-using namespace	std;
-
 int	main(int ac, char **av)
 {
 	unsigned long		i;
 	int		j;
-	string	argument;
-	string	line;
+	std::string	argument;
+	std::string	line;
 
 	if (ac == 1)
 	{
-		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 		return (0);
 	}
 	j = 1;
@@ -31,6 +29,6 @@ int	main(int ac, char **av)
 		j++;
 	}
 	if (ac > 1)
-		cout << line << endl;
+		std::cout << line << std::endl;
 	return (0);
 }
