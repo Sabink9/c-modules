@@ -19,7 +19,6 @@ int	main(void)
 			break ;
 		else if (commande == "ADD")
 		{
-			std::string fiNa, laNa, niNa, phNa, daSe;
 			std::cout << "First Name: ";
 			std::getline(std::cin, fiNa);
 			std::cout << "Last Name: ";

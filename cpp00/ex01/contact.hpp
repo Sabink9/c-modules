@@ -1,3 +1,6 @@
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
+
 #include <cctype>
 #include <iostream>
 #include <string>
@@ -12,38 +15,15 @@ class Contact
 	std::string darkestSecret;
 
 	public:
-	Contact()
-	{
-	}
+	Contact();
 
 	void setContact(std::string fn, std::string ln, std::string nn,
-			std::string pn, std::string ds)
-	{
-		firstName = fn;
-		lastName = ln;
-		nickName = nn;
-		phoneNumber = pn;
-		darkestSecret = ds;
-	}
-
-	std::string getFirstName()
-	{
-		return (firstName);
-	}
-	std::string getLastName()
-	{
-		return (lastName);
-	}
-	std::string getNickName()
-	{
-		return (nickName);
-	}
-	std::string getPhoneNumber()
-	{
-		return (phoneNumber);
-	}
-	std::string getDarkestSecret()
-	{
-		return (darkestSecret);
-	}
+			std::string pn, std::string ds);
+	std::string getFirstName();
+	std::string getLastName();
+	std::string getNickName();
+	std::string getPhoneNumber();
+	std::string getDarkestSecret();
 };
+
+#endif
