@@ -25,19 +25,19 @@ void	PhoneBook::displayAllContacts(void)
 		nbToDisplay = 8;
 	for (int i = 0; i < nbToDisplay; i++)
 	{
-		std::cout << "|" << std::setw(10) << std::right << i;
+		std::cout << "|" << std::setw(10) << i;
 		std::string fn = contacts[i].getFirstName();
 		if (fn.length() > 10)
 			fn = fn.substr(0, 9) + ".";
-		std::cout << "|" << std::setw(10) << std::right << fn;
+		std::cout << "|" << std::setw(10) << fn;
 		std::string ln = contacts[i].getLastName();
 		if (ln.length() > 10)
 			ln = ln.substr(0, 9) + ".";
-		std::cout << "|" << std::setw(10) << std::right << ln;
+		std::cout << "|" << std::setw(10) << ln;
 		std::string nn = contacts[i].getNickName();
 		if (nn.length() > 10)
 			nn = nn.substr(0, 9) + ".";
-		std::cout << "|" << std::setw(10) << std::right << nn;
+		std::cout << "|" << std::setw(10) << nn;
 		std::cout << "|" << std::endl;
 	}
 }

@@ -1,4 +1,4 @@
-#include <cctype>
+#include <cctype> // pour les fnct islower et toupper
 #include <iostream>
 #include <string>
 

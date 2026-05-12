@@ -2,23 +2,21 @@
 
 int	main(void)
 {
-	PhoneBook	PhoneBook;
-	int			index;
+	PhoneBook	phoneBook;
+	int			index = 0;
 
-	std::string fiNa;
-	std::string laNa;
-	std::string niNa;
-	std::string phNa;
-	std::string daSe;
 	while (true)
 	{
 		std::cout << "Entrez une commande (ADD, SEARCH, EXIT): ";
 		std::string commande;
-		std::getline(std::cin, commande);
+		if (!std::getline(std::cin, commande))
+            break ;
 		if (commande == "EXIT")
 			break ;
 		else if (commande == "ADD")
 		{
+			std::string fiNa, laNa, niNa, phNa, daSe;
+
 			std::cout << "First Name: ";
 			std::getline(std::cin, fiNa);
 			std::cout << "Last Name: ";
@@ -36,17 +34,17 @@ int	main(void)
 			}
 			else
 			{
-				PhoneBook.addContact(fiNa, laNa, niNa, phNa, daSe);
+				phoneBook.addContact(fiNa, laNa, niNa, phNa, daSe);
 				std::cout << "Contact ajouté avec succès !" << std::endl;
 			}
 		}
 		else if (commande == "SEARCH")
 		{
-			PhoneBook.displayAllContacts();
+			phoneBook.displayAllContacts();
 			std::cout << "Enter the index" << std::endl;
 			std::cin >> index;
 			std::cin.ignore();
-			PhoneBook.displayContacts(index);
+			phoneBook.displayContacts(index);
 		}
 	}
 	return (0);
