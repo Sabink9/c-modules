@@ -18,6 +18,9 @@ int main()
 		jim.attack();
 		club.setType("some other type of club");
 		jim.attack();
+		// Weapon sword = Weapon("long sword");
+		// jim.setWeapon(sword);
+		// jim.attack();
 	}
 	return 0;
 }

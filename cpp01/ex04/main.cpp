@@ -24,7 +24,7 @@ int	main(int ac, char **av)
 		   std::cout << "Erreur : impossible d'ouvrir le fichier" << std::endl;
 		    return (1);
 	}
-	 std::ofstream outfile(filename + ".replace");
+	std::ofstream outfile(filename + ".replace");
     	if (!outfile.is_open())
     	{
         	std::cout << "Erreur : impossible de créer le fichier" << std::endl;
