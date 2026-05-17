@@ -1,10 +1,7 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror
-NAME = Violence
-SRCS = main.cpp\
-	Weapon.cpp\
-	HumanA.cpp\
-	HumanB.cpp
+NAME = sed
+SRCS = main.cpp
 OBJ = $(SRCS:.cpp=.o)
 
 all:	$(NAME)

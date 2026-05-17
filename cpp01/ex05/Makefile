@@ -1,10 +1,8 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror
-NAME = Violence
+NAME = Harl
 SRCS = main.cpp\
-	Weapon.cpp\
-	HumanA.cpp\
-	HumanB.cpp
+	Harl.cpp
 OBJ = $(SRCS:.cpp=.o)
 
 all:	$(NAME)
